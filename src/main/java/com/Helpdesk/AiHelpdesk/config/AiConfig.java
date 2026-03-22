@@ -26,4 +26,6 @@ public class AiConfig {
                         MessageChatMemoryAdvisor.builder(chatMemory).build()).build();
     }
 
+
+
 }

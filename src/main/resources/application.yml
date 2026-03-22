@@ -3,7 +3,7 @@ spring:
     name: "help-desk-backend"
   #datasource configurations
   datasource:
-    url: jdbc:mysql://localhost:3306/helpdesk?useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://host.docker.internal:3306/helpdesk
     username: root
     password: papa9829
   jpa:
@@ -21,6 +21,7 @@ spring:
           model: llama-3.1-8b-instant
       base-url: https://api.groq.com/openai
 
+
     chat:
       memory:
         repository:
@@ -32,15 +33,6 @@ spring:
 
 server:
   port: 8081
-
-logging:
-  level:
-    org:
-      springframework:
-        ai:
-          chat:
-            client:
-              advisor: DEBUG
 
 
 #database configurations
