@@ -31,7 +31,6 @@ public class Ticket implements Serializable {
     @Column(length = 1000)
     private  String description;
 
-    @Column(unique = true)
     private String email;
 
     private LocalDateTime createdOn;
